@@ -1,0 +1,15 @@
+webbackend:
+  image: archanareddycse/reactbackend1
+  ports:
+    -"5000:5000"
+  environment:
+    DBUSERNAME: "ifsmern"
+    DBPASSWORD: "fsmern99"
+
+
+webfront:
+  image: archanareddycse/
+  ports:
+    -"80:80"
+  environment:
+    URL: <ip address of ec2 instance>:80
